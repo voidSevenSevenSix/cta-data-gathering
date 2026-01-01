@@ -5,9 +5,21 @@ const db = new Database("database.db");
 
 let queuedRuns = []; // [1, 2, 3...]
 let activeRuns = []; // [[4, start_timestamp, start_date], [5, start_timestamp, start_date]...]
-let departureStations = []; // [30000, 30001, 30002...]
-let checksCounter = [];
-// parseInt((Date.now()/1000))
+let checksCounter = []; // [[run, checks]...]
+
+// howard R, 95th R
+let departureStations = [30174, 30088];
+// ohare B, forest park B
+// [30172, 30076, 30250]
+
+// midway O, 54th Pink, kimball Brown
+// [30181, 30113]
+
+// howard YP, skokie Y, linden P
+// [30175, 30027, 30204]
+
+// harlem/lake G, cottage grove G, ashland/63rd G
+// [30003, 30140, 30056]
 
 console.log("Initialized");
 
